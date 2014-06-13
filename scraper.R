@@ -84,14 +84,14 @@ getDatasets <- function() {
                 as.numeric(timB[1]) +
                 as.numeric(timC[1])
             est <- ceiling((tim * b) / 60)
-            mess <- paste('This should take ~', est, 'minute(s).')
+            mess <- paste('This should take way more than', est, 'minute(s).')
             message(mess)
         }
-        else download_url <<- rbind(download_url, z)
+        else download_url <- rbind(download_url, z)
         
         # Transform to a list in final iteration.
         if (i == b) { 
-            download_url <<- as.list(download_url)
+            download_url <- as.list(download_url)
             message('Download_url: done.')
             # close connection ?
             # close(con, ...)
