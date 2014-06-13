@@ -19,7 +19,6 @@ The following tests are conducted:
 		- generate the indicator: speed per mb.
 
 **Test 2**
-**
 - in terms of http response header:
 	- get the response header:
 		- success or failure bloolean
