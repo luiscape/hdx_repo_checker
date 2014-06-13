@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <link href="css/c3.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+  <div class="container">
+    <div class="section">
+        <h2><span>C3.js Experiment</span></h2>
+        <p>Visualizing the CPS-generated data on the HDX Repo.</a>.</p>
+        <div>
+          <div class="row">
+            <div class="col-md-8">
+              <h3>Visualize the Time Series</h3>
+              <p>Simple time series with the countries and years.</p>
+              <div id="chart1"></div>
+            </div>
+          </div>
+
+          <!-- Second bar chart -->
+          <div class="row">
+            <div class="col-md-8">
+              <h3>Visualize the Time Series</h3>
+              <p>Simple time series with the countries and years.</p>
+              <div id="chart1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+    <script src="js/d3.v3.min.js" charset="utf-8"></script>
+    <script src="js/c3.js"></script>
+    <script>
+
+      var chart1 = c3.generate({
+        bindto: '#chart1',
+        data: {
+          url: 'data/chart.csv',
+          type: 'bar',
+          labels: false,
+          selection: {
+            enabled: true,
+            grouped: false,
+            multiple: false,
+          },
+          axis: {
+            x: {
+              show: true,
+              label: 'Under five mortality rate'
+            }
+          }
+        }
+      });
+
+      var chart1 = c3.generate({
+        bindto: '#chart1',
+        data: {
+          url: 'data/chart.csv',
+          type: 'bar',
+          labels: false,
+          selection: {
+            enabled: true,
+            grouped: false,
+            multiple: false,
+          },
+          axis: {
+            x: {
+              show: true,
+              label: 'Under five mortality rate'
+            }
+          }
+        }
+      });
+
+
+    </script>
+  </body>
+</html>
